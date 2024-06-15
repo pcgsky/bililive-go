@@ -128,7 +128,7 @@ func (r *recorder) tryRecord(ctx context.Context) {
 	}
 	fileName := filepath.Join(r.OutPutPath, buf.String())
 	outputPath, _ := filepath.Split(fileName)
-	url := urls[0]
+	url := urls[2]
 
 	if strings.Contains(url.Path, "m3u8") {
 		fileName = fileName[:len(fileName)-4] + ".ts"
